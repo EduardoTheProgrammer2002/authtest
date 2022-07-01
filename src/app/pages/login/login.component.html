@@ -1,0 +1,13 @@
+<div class="form-container">
+    <h3 class="text-3xl font-bold title">Login form</h3>
+    <form [formGroup]="loginForm" (submit)="submitForm($event)">
+        <app-input class="m-[5px]" [control]="email" type="email"  label="Email"></app-input>
+        <app-input [control]="password" type="password"  label="Password"></app-input>
+        <button type="submit" 
+            class="submit-btn disabled:opacity-50"
+            [ngClass]="{'apply-hover': loginForm.invalid}" 
+            [disabled]="loginForm.invalid" >
+            Submit
+        </button>
+    </form>
+</div>

@@ -1,0 +1,21 @@
+.Home-container {
+    position: relative;
+    align-items: center;
+    
+    & .content {
+        margin: auto;
+        width: 30%;
+        padding: 10px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+
+        & span {
+            position: absolute;
+            top: 70%;
+            left: 36%;
+        }
+    }
+
+}
